@@ -1,0 +1,327 @@
+body {
+    margin: 0 auto;
+    font-family: "Smythe", system-ui; 
+    width: 600px;
+} 
+
+/* Typography */
+
+header{
+    background-image: url(burger.jpg);
+    margin: 0 auto;
+    background-position: center;
+    height: 167px;
+    width: 600px;
+    color: white;
+    position: relative;
+  
+    
+}
+
+.headerText{
+    position: absolute;
+    right: 390px;
+    top: 45px;
+    
+}
+
+header h1 {
+    margin: 0;
+    height: 24px;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 24px;
+}
+header h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 13.8px;
+}
+
+p{
+    margin: 0;
+}
+
+.item-name{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.zutaten{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+}
+
+.preis{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+   
+   
+}
+.item-list{
+    width: 508px;
+    height: 140px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.itemPic {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 70px;
+    height: 89px;
+    font-size: 79px;
+    font-weight: 400;
+    line-height: 98px;
+    
+}
+
+.item-text {
+    position: absolute;
+    left: 140px;
+    
+}
+
+.addBTN {
+    font-family: "Inter", sans-serif;
+    color: #3C3C3C;
+    font-size: 32px;
+    font-weight: 200;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    position: absolute;
+    right: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.addBTN:hover{
+    background-color: rgba(128, 128, 128, 0.329);
+    color: white;
+}
+
+.yourOrder{
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.item-warenkorb{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+    color: black;
+    position: absolute;
+    right: 480px;
+    
+}
+
+.item-price-warenkorb{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    left: 500px;
+}
+
+.removeBTN{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    border: none;
+    background-color: white;
+    color: #BBBBBB;
+    cursor: pointer;
+    
+    position: absolute;
+    left: 1px;
+}
+
+.bestellung {
+    margin-bottom: 30px;
+
+}
+
+.item-list-bestellung{
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.hidden{
+    display: none;
+}
+
+#warenkorb-container{
+    display: none;
+    margin-top: 70px;
+}
+
+.total{
+    gap: 110px;
+    margin: 20px;
+}
+
+.addBtnDiv{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.orderBTN{
+    width: 508px;
+    height: 60px;
+    border-radius: 3px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    background: #16DB99;
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.totalPrice{
+    position: absolute;
+    left: 550px;
+}
+.totalPriceText{
+    position: absolute;
+    right: 530px;
+    line-height: 23px;
+}
+
+.orderList{
+    margin: 50px;
+}
+
+
+/* Form */
+
+.form-container {
+    display: block;
+    position: fixed ;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    background: white;
+    border: 1.3px solid #757575;
+    border-radius: 1.3px;
+    box-shadow: 5.19px 5.19px 255.44px 0px hsla(0, 0%, 0%, 0.5);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 524px;
+    height: 542px;
+}
+
+.formInputDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.13px;
+}
+
+.formInput {
+    padding: 20px;
+    width: 475.91px;
+    height: 71.3px;
+    top: 426.32px;
+    left: 61.22px;
+    border-radius: 3.89px;
+    border: 1.3px solid #757575;
+    color: #757575;
+    margin-bottom: 15px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.12px;
+    color: #757575;
+
+}
+
+.formInput::placeholder{
+    position: absolute;
+    left: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31.12px;
+    
+}
+
+.payBTN {
+    width: 475.91px;
+    height: 71.3px;
+    border: none;
+    border-radius: 4px;
+    background-color:#16DB99 ;
+   cursor: pointer;
+
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31.12px;
+
+}
+
+.form-close-btn{
+    cursor: pointer;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    margin: 15px 15px 0px auto ;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,95 @@
+<section>
+
+    <div id="list-container">
+         <div class="item-container">
+            <ul id="item-list">
+                <!-- HIER KOMMT DAS MENU -->
+                <li>
+                    <div class="Item-pic-container">
+                        <p class="itemPic">🍕</p>
+                    </div>
+                </li>
+                <li>    
+                    <div class="item-text">
+                        <h3 class="item-name">Pizza</h3>
+                        <p class="zutaten">Tomatensauce, Käse und Salami</p>
+                        <h3 class="preis">10 €</h3>
+                    </div>
+                </li>
+                <li>    
+                    <button class="addBTN" data-add ="${id}">+</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section>
+    <div id="warenkorb-container">
+        <h3 class="yourOrder">Your Order</h3>
+        <div id="bestellung" class="bestellung">
+            <div class="item-list-bestellung">
+            <ul class="orderList" >
+                <!-- Bestellung kommt hier  -->
+                <li class="item-warenkorb">
+                    pizza
+                </li>
+                <li>
+                    <button id="removeBTN" class="removeBTN">remove</button>
+                </li>
+                <li class="item-price-warenkorb">
+                    Price
+                </li>
+            </ul>
+            
+            </div>
+            <ul class="total">
+                <li class="item-warenkorb totalPriceText">
+                    Total Price 
+                </li>
+                <li class="item-price-warenkorb totalPrice">
+                    euro
+                </li>
+            </ul>
+            <div class="addBtnDiv">
+                <button class="orderBTN" id="orderBTN">Complete Order</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h3 class="yourOrder">Your Order</h3>
+                <div id="bestellung" class="bestellung">
+                    <div class="item-list-bestellung">
+                    <ul class="orderList" >
+                        <!-- Bestellung kommt hier  -->
+                        <li class="item-warenkorb">
+                            ${item.name}
+                        </li>
+                        <li>
+                            <button id="removeBTN" class="removeBTN">remove</button>
+                        </li>
+                        <li class="item-price-warenkorb">
+                        ${item.price}
+                        </li>
+                    </ul>
+                    
+                    </div>
+                    <ul class="total">
+                        <li class="item-warenkorb totalPriceText">
+                            Total Price 
+                        </li>
+                        <li class="item-price-warenkorb totalPrice">
+                            euro
+                        </li>
+                    </ul>
+                    <div class="addBtnDiv">
+                        <button class="orderBTN" id="orderBTN">Complete Order</button>
+                    </div>
+                </div>
